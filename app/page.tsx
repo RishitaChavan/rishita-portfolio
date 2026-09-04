@@ -63,7 +63,7 @@ export default function Home() {
     <div className="profile-placeholder">
 
       <img
-        src="/profile.jpg"
+        src="/profile.png"
         alt="Rishita Chavan"
       />
 
