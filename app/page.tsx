@@ -330,13 +330,133 @@ export default function Home() {
             GitHub
           </a>
         </div>
+        {/* ================= CONTACT FORM ================= */}
+  <form
+    className="contact-form"
+    action="mailto:aids.21.rishitachavan@gmail.com"
+    method="POST"
+    encType="text/plain"
+  >
+    <input
+      type="text"
+      name="Name"
+      placeholder="Your Name"
+      required
+    />
+
+    <input
+      type="email"
+      name="Email"
+      placeholder="Email Address"
+      required
+    />
+
+    <input
+      type="text"
+      name="Subject"
+      placeholder="Subject"
+      required
+    />
+
+    <textarea
+      name="Message"
+      placeholder="Write your message..."
+      rows={7}
+      required
+    />
+
+    <button type="submit" className="contact-submit">
+      <span>➤</span>
+      Send Message
+    </button>
+  </form>
+
+
       </section>
 
       {/* ================= FOOTER ================= */}
-      <footer>
-        <p>© 2026 Rishita Chavan</p>
-        <p>AI & Data Science Engineer</p>
-      </footer>
+<footer className="site-footer">
+
+  <div className="footer-container">
+
+    {/* About / Introduction */}
+    <div className="footer-about">
+      <h3>Rishita Chavan</h3>
+
+      <p>
+        AI & Data Science Engineer passionate about building
+        intelligent, data-driven applications using Python,
+        Machine Learning and modern AI technologies.
+      </p>
+    </div>
+
+
+    {/* Quick Links */}
+    <div className="footer-links">
+      <h4>Quick Links</h4>
+
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+
+    {/* Connect */}
+    <div className="footer-connect">
+      <h4>Connect</h4>
+
+      <div className="footer-socials">
+
+        {/* GitHub */}
+        <a
+          href="https://github.com/RishitaChavan"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <span>GitHub</span>
+        </a>
+
+        {/* LinkedIn */}
+        <a
+          href="https://www.linkedin.com/in/rishita-chavan-353978299/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <span>LinkedIn</span>
+        </a>
+
+        {/* Email */}
+        <a
+          href="mailto:aids.21.rishitachavan@gmail.com"
+          aria-label="Email"
+        >
+          <span>Email</span>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  {/* Footer Bottom */}
+  <div className="footer-bottom">
+
+    <p>
+      © 2026 Rishita Chavan. All Rights Reserved.
+    </p>
+
+    <p>
+      Built with <span className="heart">♥</span> using Next.js, React & AI
+    </p>
+
+  </div>
+
+</footer>
     </main>
   );
 }
