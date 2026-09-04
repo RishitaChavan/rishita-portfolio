@@ -46,7 +46,7 @@ export default function Home() {
       </a>
 
       <a
-        href="/RISHITA RESUME.docx"
+        href="/RISHITA_RESUME word.docx"
         className="button secondary"
         target="_blank"
       >
